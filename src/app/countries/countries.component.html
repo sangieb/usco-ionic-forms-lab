@@ -1,0 +1,18 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Países</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-list>
+      <ion-item *ngFor="let country of countries">
+        <ion-avatar slot="start">
+          <img [src]="country.flag?.url_png" [alt]="country.names?.common" />
+        </ion-avatar>
+        <ion-label>
+          <h2>{{ country.names?.common }}</h2>
+          <p>Capital: {{ country.capitals?.[0]?.name }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>

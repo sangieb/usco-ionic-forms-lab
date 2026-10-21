@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { CountriesComponent } from '../countries/countries.component';
 import {
   IonHeader,
   IonToolbar,
@@ -63,7 +64,8 @@ import { FeedbackService } from '../services/feedback.service';
     IonButtons,
     IonIcon,
     IonBadge,
-    IonModal
+    IonModal,
+    CountriesComponent
   ]
 })
 export class HomePage {
